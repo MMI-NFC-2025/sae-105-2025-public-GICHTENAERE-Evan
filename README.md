@@ -3,11 +3,12 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : GICHTENAERE
+- PRÉNOM : Evan
+- GROUPE : A1
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/VMKq29460869hZOTYNrepI/SAE-105?node-id=24-366&t=SoI9wDUv2Cb3FDdY-1
+
 
 ## Sujet
 
