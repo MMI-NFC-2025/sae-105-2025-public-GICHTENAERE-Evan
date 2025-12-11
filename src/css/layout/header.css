@@ -3,11 +3,19 @@
     --header-height: 64px;
 }
 
-.header {
-    position: relative;
-    z-index: 80;
-    background: transparent;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(10, 22, 40, 1); /* ou ta couleur */
 }
+body {
+  padding-top: 80px; /* adapte à la hauteur de ton header */
+}
+
+
 
 .header__container {
     max-width: 1200px;
