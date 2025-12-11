@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez le Festival Festicloze, son histoire, son équipe et ses valeurs">
+    <title>Le Festival - Festicloze</title>
+    <!-- Variables et styles de base (doivent être chargés avant les feuilles de page) -->
+    <link rel="stylesheet" href="src/css/utils/variable.css">
+    <link rel="stylesheet" href="src/css/base/main.css">
+    <link rel="stylesheet" href="src/css/page/festival.css">
+    <!-- Favicon: point to an existing file in the repo (SVG works in modern browsers) -->
+    <link rel="icon" href="assets/svg/ping.svg" type="image/svg+xml">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">Festicloze</a>
+            <button class="header__menu-btn" 
+                    id="menuBtn" 
+                    aria-label="Ouvrir le menu" 
+                    aria-expanded="false"
+                    aria-controls="mainMenu">
+                <span class="header__menu-icon"></span>
+            </button>
+        </div>
+
+        <nav class="menu" id="mainMenu" aria-label="Menu principal">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link">Accueil</a>
+                </li>
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link menu__link--active">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programme.html" class="menu__link">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="billetterie.html" class="menu__link">Billetterie</a>
+                </li>
+                <li class="menu__item">
+                    <a href="infos-pratiques.html" class="menu__link">Infos pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        
+        <!-- HERO SECTION -->
+        <section class="hero hero--page">
+            <div class="hero__background hero__background--festival"></div>
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1 class="hero__title hero__title--page">Le Festival</h1>
+            </div>
+        </section>
+
+        <!-- HISTORIQUE SECTION -->
+        <section class="section section--festival" id="historique">
+            <div class="section__container">
+                <h2 class="section__title section__title--left">Historique</h2>
+                
+                <div class="content-block">
+                    <p class="content-block__text">
+                        Festicloze est un festival baroque de Noël à Montbéliard qui marie tradition et innovation. Depuis sa création en 2015, ce festival a su se distinguer par sa capacité à revisiter les classiques de la musique baroque dans un cadre enchanteur, à l'en découvrir de nouveaux, partager et transmettre, à l'art d'enrichir ainsi l'expérience musicale baroque tout en respectant son authenticité et son héritage artistes.
+                    </p>
+                    
+                    <p class="content-block__text">
+                        Inspiré par l'Avent et l'approche de Noël, le festival propose une expérience immersive mêlant patrimoine, iconographie flamande et artistes locaux, passionnés de technique instrumentale et vocale, acteurs d'un moment culturel unique.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ÉQUIPE SECTION -->
+        <section class="section section--team" id="equipe">
+            <div class="section__container">
+                <h2 class="section__title section__title--left">L'équipe</h2>
+                
+                <p class="content-block__intro">
+                    Une équipe passionnée et dévouée travaille toute l'année pour vous offrir une programmation exceptionnelle.
+                </p>
+
+                <div class="team">
+                    <!-- Membre 1 -->
+                    <article class="team-member">
+                        <div class="team-member__content">
+                            <div class="team-member__info">
+                                <h3 class="team-member__name">Marie Dubois</h3>
+                                <p class="team-member__role">Directrice artistique</p>
+                            </div>
+                            <div class="team-member__image">
+                                <img src="assets/img/img/Photo personnel/marie.jpg" 
+                                     alt="Marie Dubois - Directrice artistique"
+                                     loading="lazy"
+                                     width="80"
+                                     height="80">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Membre 2 -->
+                    <article class="team-member">
+                        <div class="team-member__content">
+                            <div class="team-member__info">
+                                <h3 class="team-member__name">Thomas Laurent</h3>
+                                <p class="team-member__role">Chef d'orchestre</p>
+                            </div>
+                            <div class="team-member__image">
+                                <img src="assets/img/img/Photo personnel/homme thomas.jpg" 
+                                     alt="Thomas Laurent - Chef d'orchestre"
+                                     loading="lazy"
+                                     width="80"
+                                     height="80">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Membre 3 -->
+                    <article class="team-member">
+                        <div class="team-member__content">
+                            <div class="team-member__info">
+                                <h3 class="team-member__name">Sophie Martin</h3>
+                                <p class="team-member__role">Responsable production</p>
+                            </div>
+                            <div class="team-member__image">
+                                <img src="assets/img/img/Photo personnel/sophie martin.webp" 
+                                     alt="Sophie Martin - Responsable production"
+                                     loading="lazy"
+                                     width="80"
+                                     height="80">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Membre 4 -->
+                    <article class="team-member">
+                        <div class="team-member__content">
+                            <div class="team-member__info">
+                                <h3 class="team-member__name">Lucas Bernard</h3>
+                                <p class="team-member__role">Coordinateur logistique</p>
+                            </div>
+                            <div class="team-member__image">
+                                <img src="assets/img/img/Photo personnel/lucas bernard.jpg" 
+                                     alt="Lucas Bernard - Coordinateur logistique"
+                                     loading="lazy"
+                                     width="80"
+                                     height="80">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Informations supplémentaires -->
+                <div class="info-box">
+                    <ul class="info-box__list">
+                        <li class="info-box__item">
+                            Plus de 150 bénévoles et techniciens mobilisés pour réussir cet événement chaque année
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOS VALEURS SECTION -->
+        <section class="section section--values" id="valeurs">
+            <div class="section__container">
+                <h2 class="section__title section__title--left">Nos valeurs</h2>
+
+                <div class="values-grid">
+                    <!-- Valeur 1 -->
+                    <article class="value-card">
+                        <h3 class="value-card__title">Excellence artistique</h3>
+                        <p class="value-card__text">
+                            Nous nous engageons à présenter des artistes de renommée internationale qui incarnent la musique baroque et offrons une expérience artistique de la plus haute qualité.
+                        </p>
+                    </article>
+
+                    <!-- Valeur 2 -->
+                    <article class="value-card">
+                        <h3 class="value-card__title">Transmission culturelle</h3>
+                        <p class="value-card__text">
+                            Notre mission est de transmettre et de faire découvrir le répertoire baroque à tous les publics, en proposant des actions éducatives et des rencontres avec les artistes pour participer à la passion de la musique ancienne.
+                        </p>
+                    </article>
+
+                    <!-- Valeur 3 -->
+                    <article class="value-card">
+                        <h3 class="value-card__title">Accessibilité</h3>
+                        <p class="value-card__text">
+                            Nous œuvrons pour rendre le festival accessible à tous et offrons des tarifs adaptés aux différents publics, et veillons à l'accessibilité à mobilité réduite.
+                        </p>
+                    </article>
+
+                    <!-- Valeur 4 -->
+                    <article class="value-card">
+                        <h3 class="value-card__title">Patrimoine et tradition</h3>
+                        <p class="value-card__text">
+                            Festicloze valorise le patrimoine historique baroque créé dans leurs instruments, créent une atmosphère d'époque qui enrichit l'expérience musicale et connecte le passé au présent.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- THÉMATIQUE 2025 SECTION -->
+        <section class="section section--theme">
+            <div class="section__container">
+                <h2 class="section__title">Thématique 2025</h2>
+                
+                <div class="theme-box">
+                    <h3 class="theme-box__subtitle">"Noëls Baroques"</h3>
+                    
+                    <p class="theme-box__text">
+                        Cette année, Festicloze vous invite à redécouvrir les traditions de Noël à travers les compositeurs baroques de Bach à Vivaldi, en passant par Corelli, Charpentier et bien d'autres. Laissez-vous porter par la magie baroque, plongez dans l'univers des chorals, découvrez les sonorités et les concertos, et célébrez cette période joyeuse en compagnie des plus grands compositeurs de l'époque.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER NAVIGATION -->
+        <section class="section section--footer-nav">
+            <div class="section__container">
+                <nav class="footer-page-nav">
+                    <div class="footer-page-nav__brand">
+                        <h2 class="footer-page-nav__title">Festicloze</h2>
+                        <ul class="footer-page-nav__list footer-page-nav__list--social">
+                            <li class="footer-page-nav__item">
+                                <a href="#" class="footer-page-nav__link" aria-label="Facebook">
+                                    <span class="footer-page-nav__icon" aria-hidden="true">📘</span>
+                                </a>
+                            </li>
+                            <li class="footer-page-nav__item">
+                                <a href="#" class="footer-page-nav__link" aria-label="Instagram">
+                                    <span class="footer-page-nav__icon" aria-hidden="true">📷</span>
+                                </a>
+                            </li>
+                            <li class="footer-page-nav__item">
+                                <a href="#" class="footer-page-nav__link" aria-label="TikTok">
+                                    <span class="footer-page-nav__icon" aria-hidden="true">🎵</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-page-nav__section">
+                        <h3 class="footer-page-nav__section-title">Navigation</h3>
+                        <ul class="footer-page-nav__list">
+                            <li class="footer-page-nav__item">
+                                <a href="programme.html" class="footer-page-nav__link">Programme</a>
+                            </li>
+                            <li class="footer-page-nav__item">
+                                <a href="#" class="footer-page-nav__link">À propos</a>
+                            </li>
+                            <li class="footer-page-nav__item">
+                                <a href="#" class="footer-page-nav__link">Scènes</a>
+                            </li>
+                            <li class="footer-page-nav__item">
+                                <a href="#" class="footer-page-nav__link">Artistes</a>
+                            </li>
+                            <li class="footer-page-nav__item">
+                                <a href="billetterie.html" class="footer-page-nav__link">Billetterie</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-page-nav__section">
+                        <h3 class="footer-page-nav__section-title">Contact</h3>
+                        <ul class="footer-page-nav__list">
+                            <li class="footer-page-nav__item">
+                                <a href="mailto:contact@festicloze.fr" class="footer-page-nav__link">
+                                    <span class="footer-page-nav__icon" aria-hidden="true">📧</span>
+                                    <span class="footer-page-nav__text">contact@festicloze.fr</span>
+                                </a>
+                            </li>
+                            <li class="footer-page-nav__item">
+                                <a href="tel:+33123456789" class="footer-page-nav__link">
+                                    <span class="footer-page-nav__icon" aria-hidden="true">📞</span>
+                                    <span class="footer-page-nav__text">+33 1 23 45 67 89</span>
+                                </a>
+                            </li>
+                            <li class="footer-page-nav__item footer-page-nav__item--address">
+                                <span class="footer-page-nav__icon" aria-hidden="true">📍</span>
+                                <span class="footer-page-nav__text">
+                                    Place du Festival<br>
+                                    75001 Paris, France
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer footer--minimal">
+        <div class="footer__container">
+            <nav class="footer__legal">
+                <ul class="footer__legal-list">
+                    <li class="footer__legal-item">
+                        <a href="#" class="footer__legal-link">Mentions légales</a>
+                    </li>
+                    <li class="footer__legal-item">
+                        <a href="#" class="footer__legal-link">Politique de confidentialité</a>
+                    </li>
+                    <li class="footer__legal-item">
+                        <a href="#" class="footer__legal-link">Conditions générales de vente</a>
+                    </li>
+                    <li class="footer__legal-item">
+                        <a href="contact.html" class="footer__legal-link">Nous contacter</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="footer__copyright">
+                © 2025 Festicloze. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts JS -->
+    <script src="src/js/menu.js"></script>
+    <script src="src/js/scroll.js"></script>
+</body>
+</html>
