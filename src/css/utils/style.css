@@ -40,6 +40,13 @@
   --gradient-blue-stop-1-position: 0%;
   --gradient-blue-stop-2-color: rgba(90 109 144 / 0.95);
   --gradient-blue-stop-2-position: 100%;
+  /* MENU GRADIENT (utilisé pour le fond du menu mobile) */
+  --linear-gradient-menu-first-stop-1-color: #d4af37;
+  --linear-gradient-menu-first-stop-1-position: 0%;
+  --linear-gradient-menu-first-stop-2-color: #ffd700;
+  --linear-gradient-menu-first-stop-2-position: 50%;
+  --linear-gradient-menu-first-stop-3-color: #c41e3a;
+  --linear-gradient-menu-first-stop-3-position: 100%;
   --red-gradient-stop-1-color: #d95f74;
   --red-gradient-stop-1-position: 0%;
   --red-gradient-stop-2-color: #8b1538;

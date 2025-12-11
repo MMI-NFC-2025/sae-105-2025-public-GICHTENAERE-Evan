@@ -83,7 +83,7 @@
     height: 100vh;
     width: 320px;
     max-width: 92%;
-    background: linear-gradient(180deg, rgba(8,18,40,0.98), rgba(6,12,30,0.98));
+    background: linear-gradient(90deg, var(--linear-gradient-menu-first-stop-1-color) var(--linear-gradient-menu-first-stop-1-position), var(--linear-gradient-menu-first-stop-2-color) var(--linear-gradient-menu-first-stop-2-position), var(--linear-gradient-menu-first-stop-3-color) var(--linear-gradient-menu-first-stop-3-position)), linear-gradient(180deg, rgba(8,18,40,0.98), rgba(6,12,30,0.98));
     transform: translateX(-106%);
     transition: transform .28s cubic-bezier(.2,.9,.3,1);
     z-index: 75;

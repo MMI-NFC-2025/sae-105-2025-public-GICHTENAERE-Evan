@@ -1,12 +1,84 @@
-/* Placeholder styles for index page (maquette). Paste or add styles here. */
+/* Index page — Hero layout matching the maquette */
 
 .hero {
   position: relative;
-  min-height: 60vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  color: white;
+  /* vertical gradient: top -> yellow -> red (fade to red at bottom) on top of the hero image */
+  background-image: linear-gradient(180deg, rgba(212,175,55,0.0) 0%, rgba(255,215,0,0.45) 45%, rgba(196,30,58,0.9) 100%), url("../../../assets/img/img/illustration/première image.webp");
+  background-blend-mode: overlay;
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Gradient fade at bottom of hero to blend into the following section */
+.hero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 18vh; /* visible fade area - adjusts with viewport */
+  max-height: 220px;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(180deg,
+    rgba(196,30,58,0.0) 0%, /* keep top transparent */
+    rgba(255,165,0,0.18) 45%, /* warm orange/yellow mid */
+    var(--dark-blue) 100% /* final color matching page background */
+  );
+}
+
+.hero__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 9.5rem 1rem 3rem; /* increased top padding to move text further down */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* place text towards the right over the image */
+  position: relative;
+  z-index: 2; /* ensure text sits above the fade */
+}
+
+.hero-text {
+  max-width: 520px;
+  text-align: right;
   color: white;
 }
 
+.hero-text h1 {
+  font-family: var(--title-button-family);
+  font-size: 5.5rem; /* increased size */
+  margin: 0 0 0.5rem 0;
+  line-height: 0.92;
+  color: #fff;
+  text-shadow: 0 8px 30px rgba(0,0,0,0.65);
+  transform: translateY(24px); /* descend légèrement le titre sans changer la taille */
+  transition: transform .18s ease;
+}
+
+.hero-text p {
+  margin: 0;
+  font-family: var(--type-text-family);
+  font-size: 1.125rem; /* slightly larger subtitle */
+  opacity: 0.95;
+}
+
 .btn-reserver { display: inline-block; padding: 0.75rem 1.25rem; background: var(--linear-pink-gradient-stop-1-color); color: white; border-radius: 8px; text-decoration: none; }
+
+/* Responsive: center text on small screens */
+@media (max-width: 680px) {
+  .hero {
+    min-height: 60vh;
+    background-position: center top;
+  }
+  .hero__inner { justify-content: center; padding: 6rem 1rem; }
+  .hero-text { text-align: center; }
+  .hero-text h1 { font-size: 3.25rem; transform: translateY(120px); }
+  .hero-text p { font-size: 1rem; }
+  .hero-text p { font-size: 1rem; transform: translateY(115px); }
+}
