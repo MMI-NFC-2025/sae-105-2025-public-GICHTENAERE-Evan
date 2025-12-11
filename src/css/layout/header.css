@@ -1,0 +1,133 @@
+/* Header and mobile menu styles */
+:root {
+    --header-height: 64px;
+}
+
+.header {
+    position: relative;
+    z-index: 80;
+    background: transparent;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    color: var(--color-festicloze-header);
+    font-family: var(--title-button-family);
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.header__menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid rgba(248,221,128,0.18);
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.header__menu-btn:focus { outline: 3px solid rgba(248,221,128,0.14); }
+
+.header__menu-icon {
+    width: 18px;
+    height: 2px;
+    background: var(--color-festicloze-header);
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+.header__menu-icon::before,
+.header__menu-icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-festicloze-header);
+    border-radius: 2px;
+}
+.header__menu-icon::before { top: -6px; }
+.header__menu-icon::after  { top: 6px; }
+
+/* Overlay behind the menu (dim page) */
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .22s ease;
+    z-index: 70;
+}
+.menu-overlay.open { opacity: 1; pointer-events: auto; }
+
+/* Side menu panel */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 320px;
+    max-width: 92%;
+    background: linear-gradient(180deg, rgba(8,18,40,0.98), rgba(6,12,30,0.98));
+    transform: translateX(-106%);
+    transition: transform .28s cubic-bezier(.2,.9,.3,1);
+    z-index: 75;
+    box-shadow: 12px 0 40px rgba(0,0,0,0.6);
+    padding: 1.25rem;
+    overflow-y: auto;
+}
+.menu.open { transform: translateX(0); }
+
+.menu__header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.menu__brand { color: var(--color-festicloze-header); font-family: var(--title-button-family); font-size:1.25rem; }
+.menu__close {
+    background: transparent;
+    border: 2px solid rgba(248,221,128,0.9);
+    color: var(--color-festicloze-header);
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menu__list { list-style: none; margin: 1rem 0 0 0; padding: 0; display:flex; flex-direction:column; gap: 0.6rem; }
+.menu__item { }
+.menu__link {
+    display:flex; align-items:center; gap:0.8rem;
+    text-decoration:none; color: rgba(230,238,246,0.92);
+    padding: 0.9rem 0.9rem; border-radius:8px; background: rgba(255,255,255,0.012);
+}
+.menu__link:hover, .menu__link:focus { background: rgba(248,221,128,0.05); color: var(--color-festicloze-header); }
+
+/* small icons placeholder style if using inline SVG */
+.menu__link svg { width: 18px; height:18px; fill: currentColor; opacity: 0.9; }
+
+/* responsive: on larger screens keep nav visible horizontally */
+@media (min-width: 900px) {
+    .header__menu-btn { display: none; }
+    .menu { position: static; transform:none; height:auto; width:auto; background:transparent; box-shadow:none; padding:0; }
+    .menu-overlay { display:none; }
+    .menu__list { flex-direction:row; gap:1rem; }
+    .menu__link { background: transparent; padding: 0.25rem 0; }
+}

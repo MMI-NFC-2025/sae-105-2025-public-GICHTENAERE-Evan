@@ -5,34 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festicloze – Festival Baroque 2025</title>
 
-    <link rel="stylesheet" href="src/css/base/style.css">
+    <link rel="stylesheet" href="src/css/utils/variable.css">
+    <link rel="stylesheet" href="src/css/utils/css-output.css">
+    <link rel="stylesheet" href="src/css/utils/style.css">
+    <link rel="stylesheet" href="src/css/layout/header.css">
+    <link rel="stylesheet" href="src/css/page/index.css">
+    <script src="src/js/menu.js" defer></script>
 </head>
 
 <body>
 
-    <!-- =================== NAVBAR =================== -->
-    <header class="navbar">
-        <div class="logo">Festicloze</div>
-        <button class="menu-btn">
-            <span class="menu-icon"></span>
-        </button>
+    <!-- =================== HEADER (shared) =================== -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">Festicloze</a>
+            <button class="header__menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainMenu">
+                <span class="header__menu-icon"></span>
+            </button>
+        </div>
 
-        <!-- Menu déroulant (mobile ou desktop selon ton CSS) -->
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="programme.html">Programme</a></li> <!-- modifié -->
-                <li><a href="artiste.html">Artistes</a></li> <!-- modifié -->
-                <li><a href="scene.html">Scènes</a></li> <!-- modifié -->
-                <li><a href="info-pratique.html">Infos pratiques</a></li> <!-- modifié -->
-                <li><a href="festival.html">À propos</a></li> <!-- modifié -->
+        <nav class="menu" id="mainMenu" aria-label="Menu principal">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="festival.html">Le Festival</a></li>
+                <li class="menu__item"><a class="menu__link" href="programme.html">Programme</a></li>
+                <li class="menu__item"><a class="menu__link" href="artiste.html">Artistes</a></li>
+                <li class="menu__item"><a class="menu__link" href="scene.html">Scènes</a></li>
+                <li class="menu__item"><a class="menu__link" href="info-pratique.html">Infos pratiques</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- =================== HERO =================== -->
     <section class="hero">
-        <img src="assets/img/hero.jpg" alt="Décor de Noël baroque" class="hero-img">
+        <img src="assets/img/img/illustration/première image.webp" alt="Décor de Noël baroque" class="hero-img">
         <div class="hero-text">
             <h1>Festicloze</h1>
             <p>Festival Baroque 2025</p>

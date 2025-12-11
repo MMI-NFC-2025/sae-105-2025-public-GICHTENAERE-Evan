@@ -161,7 +161,7 @@
 }
 
 .team-member {
-    background: linear-gradient(180deg, rgba(13,37,66,0.42), rgba(6,20,36,0.36));
+    background: linear-gradient(180deg, var(--gradient-blue-stop-1-color), var(--gradient-blue-stop-2-color));
     border-radius: var(--radius-md);
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.08);

@@ -1,0 +1,12 @@
+/* Placeholder styles for index page (maquette). Paste or add styles here. */
+
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.btn-reserver { display: inline-block; padding: 0.75rem 1.25rem; background: var(--linear-pink-gradient-stop-1-color); color: white; border-radius: 8px; text-decoration: none; }
