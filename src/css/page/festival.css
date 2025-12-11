@@ -82,11 +82,20 @@
     background: transparent;
     padding: calc(var(--spacing-xxl) - 2rem) 0;
     color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section__title--left{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .section--team {
     background-color: rgba(10, 22, 40, 0.5);
     padding: var(--spacing-xxl) 0;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .section--values {
@@ -266,6 +275,8 @@
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
     margin-top: var(--spacing-xl);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .value-card {
@@ -274,6 +285,8 @@
     padding: var(--spacing-lg);
     border: 1px solid rgba(255, 255, 255, 0.08);
     transition: all var(--transition-normal);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .value-card:hover {
@@ -289,6 +302,8 @@
     margin-bottom: var(--spacing-sm);
     color: var(--color-festicloze-header);
     letter-spacing: var(--title-button-letter-spacing);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .value-card__text {
