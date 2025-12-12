@@ -1,0 +1,64 @@
+/* Mise en page centrée */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff8a00, #da1b60);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Conteneur principal */
+.not-found {
+  text-align: center;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Grand 404 */
+.not-found h1 {
+  font-size: 8rem;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -3px;
+  text-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* Texte explicatif */
+.not-found p {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  margin-top: -10px;
+  margin-bottom: 2rem;
+}
+
+/* Bouton de retour */
+.btn-home {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #fff;
+  color: #da1b60;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-home:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+/* Animation apparition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page404 {
+    font-size: large;
+}
