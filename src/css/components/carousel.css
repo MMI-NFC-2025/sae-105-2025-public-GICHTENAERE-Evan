@@ -1,0 +1,75 @@
+/* Limite la largeur maximale de l'image à 100% de son conteneur - https://developer.mozilla.org/fr/docs/Web/CSS/max-width */
+/* Ajuste la hauteur de l'image automatiquement pour conserver les proportions - https://developer.mozilla.org/fr/docs/Web/CSS/height */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mise en forme du carousel en CSS.
+Utiliser flex pour positionner les item du carousel les uns à coté des autres.
+La propriété "overflow-x" avec la valeur "scroll" permet rogner le contenu afin de tenir horizontalement dans la boîte de remplissage et d'ajouter un scroll horizontal si le contenu déborde.
+https://developer.mozilla.org/fr/docs/Web/CSS/overflow-x
+
+La propriété "scroll-snap-type" définit la force d'adhérence aux points d'accroche en cas de défilement d'un conteneur
+https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type
+
+Les margin négatifs à gauche et à droite corresponde à l'éespace entre le navigateur et le début du contenu, de sorte que le carousel soit collé au bords de l'écran.
+*/
+
+/* Container du carousel : items en ligne, scroll horizontal et accroche */
+.carousel__container {
+  display:flex;
+  gap : 16px;
+  align-items: center;
+  justify-content: center;
+  margin : 16px 0; 
+}
+
+/* Chaque item prend 1 part d'espace, ne rétrécit pas et a une base de 260px.
+  Ils s'alignent au centre lors du snap. */
+.carousel__item {
+  flex: 1 0 260px;
+  scroll-snap-align: center;
+}
+
+/* Les images de chaque item s'affichent en bloc pour supprimer l'espace blanc en dessous */
+.carousel__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Compléter la suite du code */
+.carousel__controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.carousel__button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.carousel__button--prev {
+  transform: rotate(180deg);
+}
+
+.carousel__container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  margin-left: -24px;
+  margin-right: -24px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}

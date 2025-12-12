@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="src/css/layout/header.css">
     <link rel="stylesheet" href="src/css/page/index.css">
     <script src="src/js/menu.js" defer></script>
+    <script type="module" src="/src/js/script.js"></script>
+    
 </head>
 
 <body>
@@ -76,6 +78,38 @@
     <!-- =================== INFOS PRATIQUES =================== -->
     <section class="infos">
         <h2>Découvrir le Festival</h2>
+        <!-- CAROUSEL INTÉGRÉ -->
+   <h1>Test Carousel</h1>
+  <div class="carousel" aria-labelledby="carousel-heading">
+    <h2 id="carousel-heading" class="carousel__heading sr-only">
+      Carousel d'images musicales
+    </h2>
+    <div class="carousel__container" role="region" aria-live="polite">
+      <div class="carousel__item">
+        <img src="/assets/img/img/scene/scene 1 redimenssioné.png" alt="Image musique 1" />
+      </div>
+      <div class="carousel__item">
+        <img src="/assets/img/img/scene/scene 2 redimenssionné.png" alt="Image musique 2" />
+      </div>
+      <div class="carousel__item">
+        <img src="/assets/img/img/scene/scene 3 redimenssionné.png" alt="Image musique 3" />
+      </div>
+      <div class="carousel__item">
+        <img src="/assets/img/img/scene/SCENE 5 redimenssioné.png" alt="Image musique 4" />
+      </div>
+      <div class="carousel__item">
+        <img src="/assets/img/img/scene/scene 6 redimenssionné.png" alt="Image musique 5" />
+      </div>
+    </div>
+    <div class="carousel__controls">
+      <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">
+        <img src="/assets/svg/fleche gauche.svg" alt="fleche gauche" />
+      </button>
+      <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">
+        <img src="/assets/svg/fleche droite.svg" alt="fleche droite" />
+      </button>
+    </div>
+  </div>
 
         <a href="info-pratique.html" class="infos-card"> <!-- modifié -->
             <div class="icon">i</div>
