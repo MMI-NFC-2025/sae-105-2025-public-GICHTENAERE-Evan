@@ -1,0 +1,22 @@
+/* Quelques styles de base utiles */
+html, body {
+    height: 100%;
+}
+/* Fond global sombre conforme à la maquette */
+:root {
+    --page-bg: linear-gradient(180deg, #071428 0%, #041426 100%);
+}
+body {
+    margin: 0;
+    font-family: var(--type-text-family);
+    background: var(--page-bg);
+    color: #e6eef6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

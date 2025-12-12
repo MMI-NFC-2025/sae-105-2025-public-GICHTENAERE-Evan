@@ -4,15 +4,22 @@
 @import "vendors/normalize.css"; 
 
 /* 2. Utils - Variables globales */
-@import "utils/variables.css";    
+@import "utils/variable.css";    
 
 /* 3. Base - Éléments HTML bruts */
-@import "base/main.css";           
+@import "base/main.css"; 
+@import "base/media.css";           
 
 /* 4. Layout - Structure de page */
-@import "layout/header.css";       
+@import "layout/header.css";    
+@import "layout/footer.css";     
 
 /* 5. Components - Spécificité la plus forte */
-@import "components/button.css";   
+@import "components/button.css";  
+@import "components/menu.css";  
+@import "components/hero.css";
+@import "components/carousel.css";  
 
 @import "layout/footer.css";
+
+

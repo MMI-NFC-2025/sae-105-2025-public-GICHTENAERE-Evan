@@ -18,11 +18,13 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 
 /* Container du carousel : items en ligne, scroll horizontal et accroche */
 .carousel__container {
-  display:flex;
-  gap : 16px;
-  align-items: center;
-  justify-content: center;
-  margin : 16px 0; 
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  margin-left: -24px;
+  margin-right: -24px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Chaque item prend 1 part d'espace, ne rétrécit pas et a une base de 260px.
@@ -62,14 +64,4 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 
 .carousel__button--prev {
   transform: rotate(180deg);
-}
-
-.carousel__container {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  margin-left: -24px;
-  margin-right: -24px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
